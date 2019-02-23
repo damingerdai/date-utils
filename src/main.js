@@ -1,4 +1,7 @@
 export function format(date, fmt) {
+    if (!fmt) {
+        fmt = 'yyyy-MM-dd';
+    }
     date = new Date(date);
     var o = {
         'M+': date.getMonth() + 1,
@@ -19,4 +22,12 @@ export function format(date, fmt) {
 
     }
     return fmt;
+}
+
+export function addDay(date, days) {
+    var d = new Date(date);
+    if (days) {
+        d.setDate(d.getDate() + days);
+    } 
+    return d;
 }

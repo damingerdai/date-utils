@@ -7,3 +7,5 @@ if (dateStr1 !== dateStr2) {
         'format error'
     )
 }
+var date2 = dateUitls.addDay(new Date(), 1);
+console.log(dateUitls.format(date2));
