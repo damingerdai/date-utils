@@ -31,3 +31,19 @@ export function addDay(date, days) {
     } 
     return d;
 }
+
+export function addMonth(date, months) {
+    var d = new Date(date);
+    if (months) {
+        d.setMonth(d.getMonth() + months);
+    }
+    return d;
+}
+
+export function addYear(date, years) {
+    var d = new Date(date);
+    if (years) {
+        d.setFullYear(d.getFullYear() + years);
+    }
+    return d;
+}
