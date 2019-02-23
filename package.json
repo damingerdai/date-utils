@@ -2,7 +2,9 @@
   "name": "date-utils",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "lib/date-util.js",
+  "module": "lib/date-util.js",
+  "brower": "lib/date-utils.min.js",
   "scripts": {
     "test": "node test/index.js",
     "dev": "rollup --config rollup.config.dev.js",
