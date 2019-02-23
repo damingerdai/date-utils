@@ -1,3 +1,4 @@
+import babel from 'rollup-plugin-babel';
 import { uglify } from "rollup-plugin-uglify";
 
 export default {
@@ -9,6 +10,9 @@ export default {
         sourcemap: true,
     },
     plugins: [
+        babel({
+            exclude: 'node_modules/**'  // 排除node_module下的所有文件
+        }),
         uglify()
     ]
 }
