@@ -23,10 +23,10 @@
     "babel-register": "6.26.0",
     "eslint": "^5.14.1",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-google": "^0.12.0",
     "eslint-plugin-import": "^2.16.0",
     "rollup-plugin-babel": "^3.0.7",
-    "rollup-plugin-uglify": "^6.0.2"
+    "rollup-plugin-uglify": "^6.0.2",
+    "shelljs": "^0.8.3"
   },
   "dependencies": {}
 }
