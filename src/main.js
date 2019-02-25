@@ -1,6 +1,9 @@
+import { logger } from './logger';
+
 export function format(date, fmt) {
     if (!fmt) {
         fmt = 'yyyy-MM-dd';
+        logger('设置fmt默认值为yyyy-MM-dd');
     }
     date = new Date(date);
     const o = {
@@ -28,7 +31,9 @@ export function addDay(date, days) {
     const d = new Date(date);
     if (days) {
         d.setDate(d.getDate() + days);
-    } 
+    } else {
+        logger('days未正确传值');
+    }
     return d;
 }
 
@@ -36,6 +41,8 @@ export function addMonth(date, months) {
     const d = new Date(date);
     if (months) {
         d.setMonth(d.getMonth() + months);
+    } else {
+        logger('months未正确传值');
     }
     return d;
 }
@@ -44,6 +51,8 @@ export function addYear(date, years) {
     const d = new Date(date);
     if (years) {
         d.setFullYear(d.getFullYear() + years);
+    } else {
+        logger('years未正确传值');
     }
     return d;
 }

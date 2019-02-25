@@ -1,22 +1,13 @@
 {
     "presets": [
         [
-            "env",
+            "es2015",
             {
-                "modules": false,
-                "targets": {
-                    "browsers": [
-                        "> 1%",
-                        "last 2 versions",
-                        "not ie <= 8"
-                    ]
-                }
+                "modules": false
             }
-        ],
-        "stage-2"
+        ]
     ],
     "plugins": [
-        "transform-runtime",
         "external-helpers"
-    ] // 配置runtime，不设置会报错
+    ]
 }
