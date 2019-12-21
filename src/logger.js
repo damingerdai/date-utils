@@ -10,4 +10,4 @@ if (ENV !== 'production') {
     console.log('Logging is enabled!');
   } else {
     logger.enabled = false;
-  }
+}
