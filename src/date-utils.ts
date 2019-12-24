@@ -23,3 +23,23 @@ export function format(date: string | number | Date, fmt = 'yyyy-MM-dd'): string
     return fmt;
 }
 
+export function addDay(date: string | number | Date, days: number) {
+    const d = new Date(date);
+    d.setDate(d.getDate() + days);
+
+    return d;
+}
+
+export function addMonth(date: string | number | Date, months: number) {
+    const d = new Date(date);
+    d.setMonth(d.getDate() + months);
+
+    return d;
+}
+
+export function addYear(date: string | number | Date, years: number) {
+    const d = new Date(date);
+    d.setFullYear(d.getFullYear() + years);
+
+    return d;
+}
