@@ -6,4 +6,4 @@
  * https://github.com/damingerdai/date-utils.git
  */
 
-export * from './src/index';
+export * from './src/date-utils';
