@@ -14,6 +14,8 @@
   "author": "arthur ming",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
     "babel-core": "6.26.3",
     "babel-loader": "7.1.5",
     "babel-plugin-external-helpers": "^6.22.0",
@@ -27,6 +29,7 @@
     "eslint": "^5.14.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
+    "husky": "^3.1.0",
     "rollup-plugin-babel": "^3.0.7",
     "rollup-plugin-commonjs": "^9.2.1",
     "rollup-plugin-node-resolve": "^4.0.1",
