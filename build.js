@@ -31,3 +31,8 @@ if (shell.exec(`npx tsc -p ${OUT_DIR}/tsconfig.json`).code !== 0) {
     shell.exec(chalk.red(`Error: TypeScript compilation failed`));
     shell.exit(1);
 }
+
+shell.echo(chalk.green(`TypeScript compilation completed`));
+
+shell.echo(`Copy ES2015 for package`);
+shell.cp(`-Rf`, [`${NPM_DIR}/src/`, `${NPM_DIR}/*.js`, `${NPM_DIR}/*.js.map`], `${ESM2015_DIR}`);
