@@ -1,4 +1,4 @@
-// import { logger } from './logger';
+import { logger } from './logger';
 
 export function format(date: string | number | Date, fmt = 'yyyy-MM-dd'): string {
     date = new Date(date);
@@ -25,21 +25,33 @@ export function format(date: string | number | Date, fmt = 'yyyy-MM-dd'): string
 
 export function addDay(date: string | number | Date, days: number) {
     const d = new Date(date);
-    d.setDate(d.getDate() + days);
+    if (days && days !== 0) {
+        d.setDate(d.getDate() + days);
+    } else {
+        logger('days未正确传值');
+    }
 
     return d;
 }
 
 export function addMonth(date: string | number | Date, months: number) {
     const d = new Date(date);
-    d.setMonth(d.getDate() + months);
+    if (months && months !== 0) {
+        d.setMonth(d.getMonth() + months);
+    } else {
+        logger('months未正确传值');
+    }
 
     return d;
 }
 
 export function addYear(date: string | number | Date, years: number) {
     const d = new Date(date);
-    d.setFullYear(d.getFullYear() + years);
+    if (years && years !== 0) {
+        d.setFullYear(d.getFullYear() + years);
+    } else {
+        logger('years未正确传值');
+    }
 
     return d;
 }
