@@ -12,4 +12,4 @@ shell.echo('start building...');
 shell.rm('-Rf', `${NPM_DIR}/*`);
 shell.mkdir('-p', `./${OUT_DIR}`);
 
-shell.cp('-Rf', ['src/', '*.ts'], `${OUT_DIR}`);
+shell.cp('-Rf', ['src/', '*.ts', '*.json', '*.lock'], `${OUT_DIR}`);
