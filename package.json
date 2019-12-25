@@ -14,6 +14,9 @@
   "author": "arthur ming",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@types/debug": "^4.1.5",
     "babel-core": "6.26.3",
     "babel-loader": "7.1.5",
     "babel-plugin-external-helpers": "^6.22.0",
@@ -27,12 +30,18 @@
     "eslint": "^5.14.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
+    "husky": "^3.1.0",
+    "rollup": "^1.27.14",
     "rollup-plugin-babel": "^3.0.7",
-    "rollup-plugin-commonjs": "^9.2.1",
-    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-license": "0.8.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-replace": "^2.1.0",
+    "rollup-plugin-sourcemaps": "^0.4.2",
     "rollup-plugin-uglify": "^6.0.2",
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.3",
+    "typescript": "^3.7.4",
+    "uglifyjs": "^2.4.11"
   },
   "dependencies": {
     "debug": "^4.1.1"

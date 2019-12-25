@@ -62,3 +62,4 @@ typings/
 
 #other
 package-lock.json
+dist/
