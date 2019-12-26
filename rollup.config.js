@@ -6,7 +6,21 @@ import babel from 'rollup-plugin-babel';
 import babelrc from 'babelrc-rollup';
 
 export default {
-  plugins: [commonjs(), resolve(), sourcemaps(), babel(babelrc()),],
+  plugins: [
+    babel(babelrc({
+      addExternalHelpersPlugin: false,
+			exclude: /node_modules/,
+			runtimeHelpers: false
+    })),
+    commonjs(),
+    resolve(),
+    // resolve({
+    //   jsnext: true,
+    //   main: true,
+    //   browser: true
+    // }),
+    sourcemaps(),
+  ],
   onwarn: () => { return },
   output: {
       format: 'umd',
