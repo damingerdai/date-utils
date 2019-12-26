@@ -5,7 +5,7 @@
 <!-- Describe the updates to accomplish the above changes. -->
 
 ## Checklist
-* **Are tests written for added components and services/ methods?**
+* **Are tests written for added code?**
 <!-- If not, why not? -->
 - [ ] Yes
 - [ ] No because:
