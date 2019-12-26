@@ -1,13 +1,14 @@
 {
     "presets": [
         [
-            "es2015",
-            {
-                "modules": false
-            }
+          "@babel/preset-env",
+          {
+            "modules": false
+          }
         ]
     ],
     "plugins": [
-        "external-helpers"
+      "@babel/plugin-external-helpers",
+      "@babel/plugin-transform-arrow-functions"
     ]
 }
