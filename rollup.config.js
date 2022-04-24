@@ -26,7 +26,7 @@ export default {
       format: 'umd',
       name: 'dateUtils',
       sourcemap: true,
-      exports: 'named',
+      // exports: 'named',
       amd: { id: 'date-utils' }
   }
 }

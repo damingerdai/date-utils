@@ -30,6 +30,7 @@
     "@types/debug": "^4.1.5",
     "@types/node": "^13.1.0",
     "babelrc-rollup": "^3.0.0",
+    "cross-env": "^7.0.3",
     "eslint": "^5.14.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
@@ -43,8 +44,8 @@
     "rollup-plugin-sourcemaps": "^0.4.2",
     "rollup-plugin-uglify": "^6.0.2",
     "shelljs": "^0.8.3",
-    "typescript": "^3.7.4",
-    "uglifyjs": "^2.4.11"
+    "terser": "^5.12.1",
+    "typescript": "^3.7.4"
   },
   "dependencies": {
     "debug": "^4.1.1"
